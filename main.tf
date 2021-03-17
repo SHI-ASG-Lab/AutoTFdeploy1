@@ -13,6 +13,24 @@ provider "azurerm" {
   features {}
 }
 
+# Variable Declarations
+variable "RG_name" {}
+
+variable "RG_Env_Tag" {}
+
+variable "RG_SP_Name" {}
+
+variable "NSG_name" {}
+
+variable "VNET_name" {}
+
+variable "mgmt_Subnet1_name" {}
+
+variable "int_Subnet2_name" {}
+
+variable "ext_Subnet3_name" {}
+
+variable "VM_NGFW_name" {}
 
 resource "azurerm_resource_group" "example" {
   name     = var.RG_name
