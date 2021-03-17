@@ -14,9 +14,7 @@ provider "azurerm" {
 }
 
 # Variable Declarations
-variable "RG_name" {
-  type = string
-}
+variable "RG_name" {}
 
 variable "RG_Env_Tag" {
     type = string
