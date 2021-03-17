@@ -33,7 +33,7 @@ variable "ext_Subnet3_name" {}
 variable "VM_NGFW_name" {}
 
 resource "azurerm_resource_group" "example" {
-  name     = ${var.RG_name}
+  name     = var.RG_name
   location = "southcentralus"
 
   tags = {
