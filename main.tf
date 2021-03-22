@@ -1,5 +1,6 @@
 
 # Configure the Azure provider
+#REM for demo
 terraform {
   required_providers {
     azurerm = {
